@@ -12,5 +12,5 @@ spring:
   # create and drop table, good for testing, production set to none or comment it
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     generate-ddl: true
