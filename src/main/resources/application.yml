@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    # PostgresQL
+    url: jdbc:postgresql://localhost:5432/db-tasks
+    driverClassName: org.postgresql.Driver
+    username: root
+    password: password
+    # default connection pool
+    hikari:
+      connectionTimeout=20000
+      maximumPoolSize=5
+  # create and drop table, good for testing, production set to none or comment it
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
